@@ -17,8 +17,11 @@ studentno: Student number(string)
 
 ### Banking App:
 1.Query Tuition
+
 balanceandtotaltuition endpoints
+
 Method: POST
+
 Parameters: 
 studentno: Student number(string)
 
