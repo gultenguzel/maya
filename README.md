@@ -35,7 +35,14 @@ studentno: Student number(string)
 
 2.Pay Tuition
 paytuition endpoints
-xxx
+
+Method: POST
+
+Parameters:
+
+studentno: Student number(string)
+
+term: Term(string)
 
 ### University Web Site:
 1.Add Tuition
@@ -68,7 +75,8 @@ term: Term (String)
 
 https://drive.google.com/file/d/14hTzhCg2npycGlgxTCDQYftM8iNR_Ujk/view
 
-##Issues I Encountered:
+## Issues I Encountered:
+
 While creating the APIs, I also had difficulty executing the logic in the relationship I would establish with the database.
 I tried to make postgre public without ip restriction, I couldn't.
 
