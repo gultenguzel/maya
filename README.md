@@ -21,6 +21,7 @@ balanceandtotaltuition endpoints
 Method: POST
 Parameters: 
 studentno: Student number(string)
+
 2.Pay Tuition
 paytuition endpoints
 xxx
