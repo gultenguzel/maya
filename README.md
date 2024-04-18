@@ -9,10 +9,15 @@ Nodejs , Express , Azure, Postgresql, Postman , JavaScript
 ## Requirements:
 
 ### University Mobile App:
+
 1.Query Tuition
+
 balanceandtotaltuition endpoints
+
 Method: POST
-Parameters: 
+
+Parameters:
+
 studentno: Student number(string)
 
 ### Banking App:
