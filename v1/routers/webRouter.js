@@ -3,7 +3,7 @@ const router = express.Router()
 
 const webController = require('../controllers/webController')
 
-router.post('/addTuiton', webController.addTuiton)
-router.post('/unpaidTutionStatus', webController.unpaidTutionStatus)
+router.post('/addTuition', webController.addTuition)
+router.post('/unpaidTuitionStatus', webController.unpaidTuitionStatus)
 
 module.exports = router
