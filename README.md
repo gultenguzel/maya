@@ -1,6 +1,8 @@
 # University Tuition Payment System
 An API allowing students to check their tuition fee status through the mobile app.
+
 An API enabling students to check their tuition fee status through the bank.
+
 An API facilitating students to pay their tuition fee via online banking.
 
 ## Technologies and Programming Languages Used:
