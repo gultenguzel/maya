@@ -18,8 +18,7 @@ exports.balanceandtotaltuition = async (req, res) => {
   } else {
     console.log('badi', body)
     console.log(value)
-    var term = ''
-    var db = await getDbDatasForTotal(body.studentno, term)
+    var db = await getDbDatasForTotal(body.studentno)
     await sleep(5000)
     console.log('test', db)
     res.send(
@@ -113,7 +112,7 @@ getDbDatasForPayTuition = async (studentno, term) => {
   }
 }
 
-getDbDatasForTotal = async (studentno, term) => {
+getDbDatasForTotal = async (studentno) => {
   const dbConf = getDBConfig()
   const pool = new Pool(dbConf)
   const queryParams = [studentno]

@@ -12,16 +12,15 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 exports.addTuition = async (req, res) => {
   try {
-    // HTTP isteğinden öğrenci bilgilerini al
+    
     const { studentno, term } = req.body
-
-    // Gelen verileri şemaya göre doğrula
+ 
     const { error, value } = addTuitionschema.validate({ studentno, term })
     if (error) {
       return res.status(400).send(error.details[0].message)
     }
 
-    // Term değerine göre öğrenim ücretini belirle
+    
     let tuitionAmount = 0
     if (term === 'spring') {
       tuitionAmount = 100
@@ -30,17 +29,13 @@ exports.addTuition = async (req, res) => {
     }
 
     var db = getDbDatasForWebAdd(studentno, term, tuitionAmount)
-    // Öğrenim ücretini veritabanına ekleyin veya güncelleyin
-    // Bu örnekte öğrenim ücretini eklemek için özel bir fonksiyon kullanılmamıştır.
-    // Gerektiğinde bu fonksiyonu tanımlayabilirsiniz.
-
-    // Başarılı yanıtı gönder
+   
     return res.status(200).json({
       message: 'Öğrenim ücreti ödemesi başarıyla eklendi.',
       tuition: tuitionAmount
     })
   } catch (error) {
-    // Hata durumunda uygun bir hata yanıtı gönder
+    
     console.error('Öğrenim ücreti eklenirken bir hata oluştu:', error)
     return res
       .status(500)
