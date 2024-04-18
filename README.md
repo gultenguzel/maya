@@ -23,6 +23,7 @@ balanceandtotaltuition endpoints
 Method: POST
 
 Parameters: 
+
 studentno: Student number(string)
 
 2.Pay Tuition
@@ -31,15 +32,25 @@ xxx
 
 ### University Web Site:
 1.Add Tuition
+
 addtuition endpoints
+
 Method: POST
+
 Parameters:
+
 studentno: Student number (String)
+
 term: Term (String)
+
 2.Unpaid Tuition Status
+
 unpaidTuitionStatus endpoints
+
 Method: POST
+
 Parameters:
+
 term: Term (String)
 
 ## DATA MODEL (ER DIAGRAM)
